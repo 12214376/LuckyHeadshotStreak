@@ -4,11 +4,12 @@ license="MIT"
 
 [[mods]]
 modId="creature_radar"
-version="1.0.7"
+version="1.0.0"
 displayName="Lucky Headshot Streak"
 authors="Codex"
 description='''抢枪爆头好运连连 (Lucky Headshot Streak)
-Forge 1.20.1 client utility mod merged from Creature Radar + AutoAim.
+打开配置键：P
+仅限单人使用，无任何绕过反作弊功能。
 '''
 displayTest="IGNORE_ALL_VERSION"
 
