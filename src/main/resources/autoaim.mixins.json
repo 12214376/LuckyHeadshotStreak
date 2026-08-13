@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.xybaka.autoaim.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "autoaim.refmap.json",
+  "mixins": [
+    "ConnectionMixin"
+  ],
+  "client": [
+    "CameraMixin",
+    "EntityMixin",
+    "GameRendererMixin",
+    "KeyboardInputMixin",
+    "KeyMappingMixin",
+    "LightTextureMixin",
+    "LivingEntityRendererMixin",
+    "MinecraftMixin",
+    "PlayerInfoMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

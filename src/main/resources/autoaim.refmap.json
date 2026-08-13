@@ -1,0 +1,74 @@
+{
+  "mappings": {
+    "com/xybaka/autoaim/mixin/GameRendererMixin": {
+      "bobHurt": "Lnet/minecraft/client/renderer/GameRenderer;m_109117_(Lcom/mojang/blaze3d/vertex/PoseStack;F)V",
+      "pick": "Lnet/minecraft/client/renderer/GameRenderer;m_109087_(F)V",
+      "getFov": "Lnet/minecraft/client/renderer/GameRenderer;m_109141_(Lnet/minecraft/client/Camera;FZ)D"
+    },
+    "com/xybaka/autoaim/mixin/CameraMixin": {
+      "getMaxZoom": "Lnet/minecraft/client/Camera;m_90566_(D)D"
+    },
+    "com/xybaka/autoaim/mixin/KeyboardInputMixin": {
+      "tick": "Lnet/minecraft/client/player/KeyboardInput;m_214106_(ZF)V"
+    },
+    "com/xybaka/autoaim/mixin/ConnectionMixin": {
+      "send(Lnet/minecraft/network/protocol/Packet;)V": "Lnet/minecraft/network/Connection;m_129512_(Lnet/minecraft/network/protocol/Packet;)V"
+    },
+    "com/xybaka/autoaim/mixin/MinecraftMixin": {
+      "shouldEntityAppearGlowing": "Lnet/minecraft/client/Minecraft;m_91314_(Lnet/minecraft/world/entity/Entity;)Z"
+    },
+    "com/xybaka/autoaim/mixin/LivingEntityRendererMixin": {
+      "Lnet/minecraft/util/Mth;lerp(FFF)F": "Lnet/minecraft/util/Mth;m_14179_(FFF)F",
+      "Lnet/minecraft/util/Mth;rotLerp(FFF)F": "Lnet/minecraft/util/Mth;m_14189_(FFF)F",
+      "render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V": "Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;m_7392_(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "com/xybaka/autoaim/mixin/PlayerInfoMixin": {
+      "getCapeLocation": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105338_()Lnet/minecraft/resources/ResourceLocation;",
+      "getSkinLocation": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105337_()Lnet/minecraft/resources/ResourceLocation;"
+    },
+    "com/xybaka/autoaim/mixin/LightTextureMixin": {
+      "updateLightTexture": "Lnet/minecraft/client/renderer/LightTexture;m_109881_(F)V",
+      "Lnet/minecraft/client/OptionInstance;get()Ljava/lang/Object;": "Lnet/minecraft/client/OptionInstance;m_231551_()Ljava/lang/Object;"
+    },
+    "com/xybaka/autoaim/mixin/EntityMixin": {
+      "getTeamColor": "Lnet/minecraft/world/entity/Entity;m_19876_()I"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/xybaka/autoaim/mixin/GameRendererMixin": {
+        "bobHurt": "Lnet/minecraft/client/renderer/GameRenderer;m_109117_(Lcom/mojang/blaze3d/vertex/PoseStack;F)V",
+        "pick": "Lnet/minecraft/client/renderer/GameRenderer;m_109087_(F)V",
+        "getFov": "Lnet/minecraft/client/renderer/GameRenderer;m_109141_(Lnet/minecraft/client/Camera;FZ)D"
+      },
+      "com/xybaka/autoaim/mixin/CameraMixin": {
+        "getMaxZoom": "Lnet/minecraft/client/Camera;m_90566_(D)D"
+      },
+      "com/xybaka/autoaim/mixin/KeyboardInputMixin": {
+        "tick": "Lnet/minecraft/client/player/KeyboardInput;m_214106_(ZF)V"
+      },
+      "com/xybaka/autoaim/mixin/ConnectionMixin": {
+        "send(Lnet/minecraft/network/protocol/Packet;)V": "Lnet/minecraft/network/Connection;m_129512_(Lnet/minecraft/network/protocol/Packet;)V"
+      },
+      "com/xybaka/autoaim/mixin/MinecraftMixin": {
+        "shouldEntityAppearGlowing": "Lnet/minecraft/client/Minecraft;m_91314_(Lnet/minecraft/world/entity/Entity;)Z"
+      },
+      "com/xybaka/autoaim/mixin/LivingEntityRendererMixin": {
+        "Lnet/minecraft/util/Mth;lerp(FFF)F": "Lnet/minecraft/util/Mth;m_14179_(FFF)F",
+        "Lnet/minecraft/util/Mth;rotLerp(FFF)F": "Lnet/minecraft/util/Mth;m_14189_(FFF)F",
+        "render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V": "Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;m_7392_(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+      },
+      "com/xybaka/autoaim/mixin/PlayerInfoMixin": {
+        "getCapeLocation": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105338_()Lnet/minecraft/resources/ResourceLocation;",
+        "getSkinLocation": "Lnet/minecraft/client/multiplayer/PlayerInfo;m_105337_()Lnet/minecraft/resources/ResourceLocation;"
+      },
+      "com/xybaka/autoaim/mixin/LightTextureMixin": {
+        "updateLightTexture": "Lnet/minecraft/client/renderer/LightTexture;m_109881_(F)V",
+        "Lnet/minecraft/client/OptionInstance;get()Ljava/lang/Object;": "Lnet/minecraft/client/OptionInstance;m_231551_()Ljava/lang/Object;"
+      },
+      "com/xybaka/autoaim/mixin/EntityMixin": {
+        "getTeamColor": "Lnet/minecraft/world/entity/Entity;m_19876_()I"
+      }
+    }
+  }
+}

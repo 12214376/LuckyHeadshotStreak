@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="creature_radar"
+version="1.0.7"
+displayName="Lucky Headshot Streak"
+authors="Codex"
+description='''抢枪爆头好运连连 (Lucky Headshot Streak)
+Forge 1.20.1 client utility mod merged from Creature Radar + AutoAim.
+'''
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.creature_radar]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.creature_radar]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.creature_radar]]
+    modId="tacz"
+    mandatory=false
+    versionRange="[1.0.0,)"
+    ordering="AFTER"
+    side="CLIENT"
