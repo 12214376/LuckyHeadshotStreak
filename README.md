@@ -6,11 +6,14 @@
 - Mod ID：`creature_radar`（兼容原配置键位与资源路径）
 - 当前版本：`1.0.0`
 - 打开配置键：`P`
+- 自动瞄准开关：`G`
 
 ## 安装
 
-1. 安装对应游戏环境后，将 [dist/LuckyHeadshotStreak-1.0.0.jar](dist/LuckyHeadshotStreak-1.0.0.jar) 放入 `mods`
-2. 启动游戏，按 `P` 打开配置界面
+1. 将 [dist/LuckyHeadshotStreak-1.0.0.jar](dist/LuckyHeadshotStreak-1.0.0.jar) 放入 `mods`
+2. 启动游戏
+3. 按 `P` 打开配置界面
+4. 按 `G` 开关自动瞄准
 
 ## 仓库结构
 

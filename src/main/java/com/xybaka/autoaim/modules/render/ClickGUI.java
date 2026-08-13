@@ -7,7 +7,8 @@ import net.minecraft.client.Minecraft;
 
 public class ClickGUI extends Module {
     public ClickGUI() {
-        super("ClickGUI", Category.RENDER, 344);
+        // no default hotkey (disable Right Shift menu open)
+        super("ClickGUI", Category.RENDER, -1);
     }
 
     public void onEnable() {

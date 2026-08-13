@@ -43,15 +43,30 @@ public class ModuleManager {
         this.modules.add(new ThirdPersonSpin());
         this.modules.forEach(Module::init);
         ConfigManager.instance.load(this.modules);
+        this.applyFixedHotkeys();
         this.get(Target.class).enable();
     }
 
+    private void applyFixedHotkeys() {
+        // G toggle auto aim; no Right Shift menu hotkey
+        AutoAim autoAim = this.get(AutoAim.class);
+        if (autoAim != null) {
+            autoAim.setKey(71);
+        }
+        ClickGUI clickGUI = this.get(ClickGUI.class);
+        if (clickGUI != null) {
+            clickGUI.setKey(-1);
+        }
+    }
+
     public void saveConfig() {
+        this.applyFixedHotkeys();
         ConfigManager.instance.save(this.modules);
     }
 
     public void loadConfig() {
         ConfigManager.instance.load(this.modules);
+        this.applyFixedHotkeys();
     }
 
     public List<Module> getModules() {
